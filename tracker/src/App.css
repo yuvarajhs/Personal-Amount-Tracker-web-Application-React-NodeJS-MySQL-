@@ -1,0 +1,654 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a i{
+  color: black;
+}
+.indexPage{
+  width:100vw;
+  height: 100vh;
+  background-color: #95d1c3;
+}
+
+.indexPage-container{
+  width: 30vw;
+  height: 30vh;
+  background-color: rgb(78, 75, 75);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.index-cont-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+.index-cont-box h3{
+  width: 100px;
+  padding: 10px 20px;
+  background-color: rgb(29, 27, 27);
+
+}
+.index-cont-box h3:hover{
+  background-color: rgb(180, 173, 173);
+  box-shadow: 0px 0px 5px 5px black;
+  width: 120px;
+  
+}
+.index-cont-box h3:hover .link{
+  color: rgb(7, 92, 95);
+}
+.index-cont-box .link{
+  color: white;
+  text-decoration: none;
+}
+.register{
+  background: linear-gradient(to left,#03a0a0,#4ad3ba,#97ccbf);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.register-container h2{
+  position: relative;
+  top: 15vh;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ .reg-cont-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+
+  margin-top: 40px;
+}
+.register-container input {
+  box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);
+  position: relative;
+  padding: 10px;
+  border: none;
+  font-size: medium;
+  background-color: transparent;
+  border-radius: 20px;
+  outline: none;
+  text-align: center;
+  font-family:  'Times New Roman', Times, serif;
+}
+.register-container input:hover,.register-container input:focus{
+  width: 250px;
+  background: linear-gradient(to right,rgb(10, 134, 114),rgb(107, 165, 165),rgb(170, 188, 192));
+  
+}
+
+.register-container button{
+  width: 120px;
+  padding: 10px 20px;
+  font-size: larger;
+  font-weight: 10px;
+  background-color: rgb(37, 34, 34);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  margin-right: 10px;
+}
+.register-container button a{
+  text-decoration: none;
+  color: white;
+}
+.register-container button:hover{
+  background-color: rgb(221, 38, 38);
+}.login-cont-box{
+  margin-top: -20px;
+}
+.login-container input {
+  left: 6px;
+  
+}
+.home{
+  width: 100vw;
+  height: 1000px;
+  background: linear-gradient(to right,#74ffff,#8adacd,#97ccbf);
+  overflow: hidden;
+  
+}
+
+.home-nav{
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right,rgb(52, 196, 176),rgb(112, 192, 168),rgb(166, 209, 202)); 
+  background-color: transparent;
+  width: 100vw;
+  height: 70px;
+  
+}
+.home-nav i{
+  font-size: 30px;
+  margin-left: 15vw 13vh;
+  margin-top: 20px;
+}
+.home-nav i{
+  cursor: pointer;
+}
+
+.menu{
+  width: 200px;
+  height: 300px;
+  background-color: #11d4d4;
+  color: white;
+  position: absolute;
+  margin-top: 70px;
+  list-style: none;
+  font-size: larger;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 3px black;
+  padding-top: 20px;
+}
+.menu li{
+  width: 200px;
+  padding: 20px;
+  background-color: #0da5a5;
+  border-radius: 20px;
+}
+.menu li a{
+  text-decoration: none;
+  color: white;
+}
+.menu li:hover{
+  background-color: rgb(42, 44, 44);
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: inherit;
+}
+.home-nav h1{
+  margin-top: 15px;
+}
+.amberger{
+  margin-left: 20px;
+}
+.profile{
+  margin-right: 20px;
+}
+.profile-block{
+  width: 150px;
+  height: auto;
+  background-color: rgb(12, 221, 193);
+  border-radius: 10px;
+  position: absolute;
+  right: 10px;
+  top: 65px;
+  box-shadow: 5px 5px 5px 2px rgb(32, 32, 32);
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 20px;
+}
+.profile-block i{
+  font-size: 15px;
+  
+}
+.profile-block span{
+  font-size: large;
+}
+.profile-block a:hover{
+  color: red;
+}
+.profile-block a{
+  color: rgb(7, 7, 7);
+  text-decoration: none ;
+  padding-bottom: 20px;
+  font-size: large;
+
+}
+#main-logo{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+}
+#main-logo img{
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+  margin-top: -10px;
+}
+.section{
+  display: flex;
+  justify-content:space-evenly ;
+  text-align: center;
+  margin-top: 5px;
+}
+.sec-container{
+  
+  width: 250px;
+  height: 100px;
+  box-shadow: 1px 1px 5px 5px rgb(37, 202, 188);
+  padding-top:20px ;
+}
+.pieChart-sec{
+ 
+  display: flex;
+  justify-content:center;
+  padding: 100px 30px 0px 30px;
+
+}
+.credit-pieChart{
+  width: 40vw;
+  height: 200px;
+}
+.debit-pieChart{
+  width: 40vw;
+  margin-top: -150px;
+  
+}
+
+.nav-2{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: linear-gradient(to right,rgb(9, 179, 179),rgb(90, 224, 202),rgb(11, 175, 197), rgb(7, 180, 223)); 
+}
+.nav-2 i{
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.nav-2 i:hover{
+  cursor: pointer;
+  background-color: rgb(62, 207, 195);
+}
+.management-block{
+  position: absolute;
+  width: 250px;
+  background-color: #0da5a5;
+  list-style: none;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px black;
+  margin-top: 20px;
+}
+.management-block li {
+  padding: 20px;
+  border-radius: 30px;
+}
+.management-block li a{
+  text-decoration: none;
+  color: black;
+}
+.management-block li:hover{
+  background-color: black;
+  font-size: large;
+  
+  text-align: center;
+  cursor:pointer;
+  
+}
+.management-block li:hover a{
+  color: white;
+}
+
+.download-icon-block{
+  display: flex;
+}
+.personal-details{
+  width: 100%;
+  height: 780px;
+  background: linear-gradient(to right,rgb(83, 218, 218),rgb(52, 174, 190), rgb(6, 182, 226));
+  text-align: center;
+}
+.personal-details h1{
+  padding-top: 30px;
+}
+.personal_details-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  padding: 20px 40px;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 0px 5px 5px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.personal_details-container-block{
+  width: 60%;
+  padding: 20px;
+  border: 1px solid black;
+  font-size: 30px;
+  border-radius: 40px;
+}
+.personal_details-container-block:hover{
+    background-color: #042e2e;
+    width: 70%;
+    box-shadow: 0px 5px 5px 5px black;
+    color: white;
+}
+
+.updateName-block{
+  background-color: rgb(158, 155, 155);
+  opacity: 0.95;
+  padding: 20px;
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index:1;
+  
+}
+.updateName-block h2{
+  position: absolute;
+  right: 15px;
+  margin-top: -20px;
+  cursor: pointer;
+}
+
+.updateName-block input{
+  margin-top: 60px;
+  padding: 20px;
+  width: 300px;
+  color: white;
+  font-size: larger;
+  border-radius: 40px;
+  text-align: center;
+  background-color: #042e2e;
+}
+.updateName-block button{
+  padding: 20px;
+  width: 200px;
+  background-color: black;
+  font-size: larger;
+  color: white;
+  text-align: center;
+  border-radius: 40px;
+}
+.updateName-block button:hover{
+  background-color: red;
+}
+
+.emailIntegration{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to left,rgb(83, 218, 218),rgb(152, 236, 247), rgb(174, 218, 230));
+  text-align: center;
+ 
+}
+.emailIntegration h1{
+  padding-top: 30px;
+}
+.emailIntegration-container{
+  width: 40%;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 5px 5px 10px 5px rgb(21, 22, 22);
+  
+}
+.emailIntegration-block{
+  margin-top: 30px;
+}
+.emailIntegration-block h2{
+  margin-bottom: 40px;
+}
+.emailIntegration-block input, .emailIntegration-block button{
+  padding: 20px 40px;
+  font-size: larger;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px 3px black;
+}
+.emailIntegration-block button{
+  background-color: #042e2e;
+}
+.emailIntegration-block button:hover{
+  background-color: rgb(236, 117, 117);
+}
+
+
+
+
+
+
+
+
+.overView-section{
+  background: linear-gradient(to bottom,rgb(107, 233, 216),rgb(54, 190, 190),rgb(40, 216, 178));
+  padding: 20px;
+  
+}
+.detailes-heading{
+  display: flex;
+  gap: 20px;
+}
+.detailes-heading h3{
+  border-radius: 20px;
+  padding: 20px 40px;
+}
+
+
+.transparent{
+  background-color: transparent;
+}
+.color-blue{
+  background-color: rgb(6, 121, 111);
+}
+.color-light-blue{
+  background-color: rgb(45, 146, 138);
+}
+.detailed-credits{
+  width: 100%;
+  height: 82vh;
+  background-color: rgb(6, 121, 111);
+}
+.detailed-debits{
+  width: 100%;
+  height: 82vh;
+  border: 1px solid black;
+  background-color: rgb(45, 146, 138);
+  
+}
+table{
+  width: 100%;
+}
+td,th{
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 20px;
+  text-align: center;
+}
+
+.addManually-section{
+  display: flex;
+  justify-content: center;
+}
+.addManually-heading{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  
+}
+.addManually-heading h3{
+  padding: 20px;
+  border-radius: 30px;
+}
+.addCredits{
+  width: 60%;
+  height: 82vh;
+  background-color: rgb(6, 121, 111);
+  border-radius: 100px;
+}
+.addDebits{
+  width: 60%;
+  height: 82vh;
+  border-radius: 100px;
+  background-color: rgb(45, 146, 138);
+
+}
+
+
+.addManually-block input {
+  width: 300px;
+  height: 80px;
+  color: white;
+  box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);
+  position: relative;
+  padding: 10px;
+  border: none;
+  font-size: larger;
+  background-color: rgb(33, 41, 41);
+  border-radius: 40px;
+  outline: none;
+  text-align: center;
+  font-family:  'Times New Roman', Times, serif;
+}
+.addManually-block input:focus {
+  
+  background: linear-gradient(to right,rgb(10, 134, 114),rgb(107, 165, 165),rgb(170, 188, 192));
+  
+}
+
+.addManually-block button{
+  width: 120px;
+  
+  padding: 10px 30px;
+  font-size: larger;
+  font-weight: 10px;
+  background-color: rgb(37, 34, 34);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  left: 90px;
+}
+.addManually-sec button a{
+  text-decoration: none;
+  color: white;
+}
+.addManually-sec button:hover{
+  background-color: rgb(221, 38, 38);
+}
+
+.addManually-block{
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-top: 40px;
+  
+  display: flex;
+  justify-content: center;
+  
+}
+
+.trends{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right,rgb(5, 179, 164),rgb(133, 241, 214),rgb(212, 212, 228));
+  text-align: center;
+}
+.trends h1{
+  padding-top: 20px;
+}
+.lineChart{
+  width: 80vw;
+  padding: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.spendAlert{
+  width: 100%;
+  height: 100vh;
+  background:linear-gradient(to bottom,rgb(18, 224, 224),rgb(150, 235, 228), rgb(190, 233, 236));
+}
+.manage-category{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top,#76c1d4,rgb(215, 236, 238));
+  text-align: center;
+  padding: 20px;
+}
+.manage-category i{
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  font-size: 50px;
+}
+.manage-category-block{
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.manage-category-subBlocks{
+  padding: 10px;
+  height: min(10px),auto;
+  border: 1px solid black;
+  list-style: none;
+  border-radius: 10px;
+  background: linear-gradient(to right,#bcc7c9,#9ac2c5);
+}
+
+.manage-category-subBlocks li{
+  list-style: none;
+  font-size: large;
+  padding: 20px;
+}
+.add-category{
+  width: 50vw;
+  height: 50vh;
+  box-shadow: 50px 40px 30px 1px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right,rgb(71, 167, 206),rgb(176, 209, 211));
+  opacity: .9;
+  border-radius: 20px;
+}
+.add-category input, .add-category button{
+  padding: 20px 30px;
+  font-size: 25px;
+  border-radius:30px ;
+  border: none;
+  outline: none;
+  color: black;
+  text-align: center;
+  background: linear-gradient(to right,#161616,#797b7c);
+  opacity: 10;
+}
+.add-category input::placeholder, .add-category button{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+.add-category i{
+  font-size: 30px;
+  border:3px solid black;
+  padding: 2px;
+  border-radius: 50px;
+}
