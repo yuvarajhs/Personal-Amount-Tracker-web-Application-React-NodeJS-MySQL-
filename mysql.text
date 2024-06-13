@@ -1,0 +1,48 @@
+1. Create a database " Users ".
+    -> create database Users;
+    -> use Users;  
+2. Create a tables table_names "user_details", "credits", "debits", "debitalert", "category".
+    -> create table user_details(name varchar(30), email varchar(30), password varchar(30));
+    -> create table credits(name varchar(30), date date, credit int);
+    -> create table debits(name varchar(20), date date, debit int);
+    -> create table debitalert(amount int);
+        -> insert into debitalert values(10000);//initially we set default set limit ₹10,000.
+    -> create category(id int primary key auto_increment, category_name varchar(30));
+
+    
+mysql>  desc user_details;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| name     | varchar(20) | YES  |     | NULL    |       |
+| email    | varchar(20) | YES  |     | NULL    |       |
+| password | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+
+mysql> desc credits;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| name   | varchar(20) | YES  |     | NULL    |       |
+| date   | date        | YES  |     | NULL    |       |
+| credit | int         | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> desc debitalert;
++--------+------+------+-----+---------+-------+
+| Field  | Type | Null | Key | Default | Extra |
++--------+------+------+-----+---------+-------+
+| amount | int  | YES  |     | NULL    |       |
++--------+------+------+-----+---------+-------+
+1 row in set (0.00 sec)
+
+mysql> desc category;
++---------------+-------------+------+-----+---------+----------------+
+| Field         | Type        | Null | Key | Default | Extra          |
++---------------+-------------+------+-----+---------+----------------+
+| id            | int         | NO   | PRI | NULL    | auto_increment |
+| category_name | varchar(20) | YES  | UNI | NULL    |                |
++---------------+-------------+------+-----+---------+----------------+
+2 rows in set (0.00 sec)
